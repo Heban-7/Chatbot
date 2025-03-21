@@ -1,0 +1,1 @@
+# Generates response from retrieved documents
