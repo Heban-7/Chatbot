@@ -44,7 +44,7 @@ rag-chatbot/
 ## 🛠️ Installation & Setup
 ### 1️⃣ Clone the Repository
 
-git clone https://github.com/your-username/rag-chatbot.git
+git clone https://github.com/Heban-7/rag-chatbot.git
 cd rag-chatbot
 
 ### 2️⃣ Set Up Environment Variables
