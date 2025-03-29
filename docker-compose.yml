@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    container_name: rag_api
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    depends_on:
+      - pinecone_db
+
+  pinecone_db:
+    image: pinecone/pinecone
+    container_name: pinecone_server
+    environment:
+      - PINECONE_API_KEY=${PINECONE_API_KEY}
+      - PINECONE_ENVIRONMENT=us-west1-gcp
+    ports:
+      - "8100:8100"
