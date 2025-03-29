@@ -9,3 +9,4 @@ pydantic
 pinecone
 pinecone-client
 pinecone[grpc]
+
